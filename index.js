@@ -97,7 +97,7 @@ const autos = [
 ];
 
 app.get('/', (req , res) =>{
-    res.send('Ta funcionando');
+    res.send('Api de autos funcionando');
 });
 
 app.get('/api/autos', (req , res) =>{
