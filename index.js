@@ -112,5 +112,5 @@ app.get('/api/autos/:modelo', (req , res) =>{
     else res.send(auto);
 });
 
-const port = process.env.port || 80;
+const port = process.env.port || 3001;
 app.listen(port, () => console.log(`Puerto ${port}`));
