@@ -96,13 +96,11 @@ const autos = [
     }
 ];
 
-// app.get('/', (req , res) =>{
-//     res.send('Api de autos funcionando');
-// });
-
 app.get('/', (req , res) =>{
-    res.send(autos);
+    res.send('Api de autos funcionando');
 });
+
+
 
 app.get('/api/autos', (req , res) =>{
     res.send(autos);
