@@ -13,7 +13,9 @@ const autos = [
       transmision: 'Automática',
       motor: '3.9L V8',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Lamborghini',
@@ -22,7 +24,9 @@ const autos = [
       transmision: 'Automática',
       motor: '5.2L V10',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Porsche',
@@ -31,7 +35,9 @@ const autos = [
       transmision: 'Automática',
       motor: '3.8L H6',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 8
+      velocidades: 8,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'McLaren',
@@ -40,7 +46,9 @@ const autos = [
       transmision: 'Automática',
       motor: '4.0L V8',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Aston Martin',
@@ -49,7 +57,9 @@ const autos = [
       transmision: 'Manual',
       motor: '4.0L V8',
       frenos: 'Discos de acero',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Chevrolet',
@@ -58,7 +68,9 @@ const autos = [
       transmision: 'Automática',
       motor: '6.2L V8',
       frenos: 'Discos de acero',
-      velocidades: 8
+      velocidades: 8,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Ford',
@@ -67,7 +79,9 @@ const autos = [
       transmision: 'Automática',
       motor: '3.5L V6',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Nissan',
@@ -76,7 +90,9 @@ const autos = [
       transmision: 'Automática',
       motor: '3.8L V6',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 6
+      velocidades: 6,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Audi',
@@ -85,7 +101,9 @@ const autos = [
       transmision: 'Automática',
       motor: '5.2L V10',
       frenos: 'Discos de acero',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     },
     {
       marca: 'Mercedes-Benz',
@@ -94,15 +112,15 @@ const autos = [
       transmision: 'Automática',
       motor: '4.0L V8',
       frenos: 'Discos de carbono cerámico',
-      velocidades: 7
+      velocidades: 7,
+      image: 'https://img.remediosdigitales.com/a86b1b/ferrari-488-gtb-by-pogea-racing_3/840_560.jpg',
+      precio: 240000000
     }
 ];
 
 app.get('/', (req , res) =>{
     res.send('Api de autos funcionando');
 });
-
-
 
 app.get('/api/autos', (req , res) =>{
     res.send(autos);
