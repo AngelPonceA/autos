@@ -127,9 +127,14 @@ app.get('/api/autos', (req , res) =>{
 });
 
 app.get('/api/autos/:modelo', (req , res) =>{
-    const autosModelo = autos.filter(auto => auto.modelo.includes(req.params.modelo));
-    if (!autosModelo) return;
-    else res.send(autosModelo);
+  const modeloBuscado = req.params.modelo.toLowerCase();
+  const autosModelo = autos.filter(auto => auto.modelo.toLowerCase().includes(modeloBuscado));
+  
+    if (autosModelo.length === 0) {
+      return res.status(404).json({ message: 'No se encontraron autos que coincidan con la búsqueda' });
+  } else {
+      res.json(autosModelo);
+  }
 });
 
 const port = process.env.port || 3001;
