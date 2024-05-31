@@ -126,9 +126,8 @@ app.get('/api/autos', (req , res) =>{
     res.send(autos);
 });
 
-app.get('/api/autos/:modelo', (req , res) =>{
-  const modeloBuscado = req.params.modelo.toLowerCase();
-  const autosModelo = autos.filter(auto => auto.modelo.toLowerCase().includes(modeloBuscado));
+app.get('/api/autos/:modelo', (req , res) =>{z
+  const auto = autos.find(x => x.modelo === req.params.modelo);
   
     if (autosModelo.length === 0) {
       return res.status(404).json({ message: 'No se encontraron autos que coincidan con la búsqueda' });
