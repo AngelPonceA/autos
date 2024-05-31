@@ -127,9 +127,9 @@ app.get('/api/autos', (req , res) =>{
 });
 
 app.get('/api/autos/:modelo', (req , res) =>{
-    const auto = autos.filter(x => x.modelo === req.params.modelo);
-    if (!auto) return;
-    else res.send(auto);
+    const autosModelo = autos.filter(auto => auto.modelo.includes(req.params.modelo));
+    if (!autosModelo) return;
+    else res.send(autosModelo);
 });
 
 const port = process.env.port || 3001;
