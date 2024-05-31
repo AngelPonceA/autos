@@ -128,7 +128,7 @@ app.get('/api/autos', (req , res) =>{
 
 app.get('/api/autos/:modelo', (req , res) =>{
     const auto = autos.find(x => x.modelo === req.params.modelo);
-    if (!auto) return res.status(404).send('No se ha encontrado');
+    if (!auto) return;
     else res.send(auto);
 });
 
