@@ -129,10 +129,10 @@ app.get('/api/autos', (req , res) =>{
 app.get('/api/autos/:modelo', (req , res) =>{z
   const auto = autos.find(x => x.modelo === req.params.modelo);
   
-    if (autosModelo.length === 0) {
+    if (auto.length === 0) {
       return res.status(404).json({ message: 'No se encontraron autos que coincidan con la búsqueda' });
   } else {
-      res.json(autosModelo);
+      res.json(auto);
   }
 });
 
