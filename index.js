@@ -133,7 +133,7 @@ app.get('/api/autos/:modelo', (req , res) =>{
     if (modeloBuscado.length === 0) {
       return res.status(404).json({ message: 'No se encontraron autos que coincidan con la búsqueda' });
   } else {
-      res.json(modeloBuscado);
+      res.json(autosModelo);
   }
 });
 
